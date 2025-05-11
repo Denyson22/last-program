@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+<title>Sign-In Page</title>
+<link rel="stylesheet" href="sourcecode.html">
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #d1eb74, #6177da);
+  }
+
+  .container {
+    background: rgba(255,255,255,0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    max-width: 400px;
+    width: 90%;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+
+  input[type=text]:focus,
+  input[type=password]:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+
+  .sign-in-btn {
+    padding: 12px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .sign-in-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .forgot-password {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Music refreshes the mind</h2>
+  <form action="sourcecode.html">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter your username" required />
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter your password" required />
+    </div>
+    <button class="sign-in-btn" type="submit">Sign In</button>
+  </form>
+  <div class="forgot-password">
+    <a href="https://accounts.google.com/signin/recovery" target="_blank">Forgot Password?</a>
+  </div>
+</div>
+</body>
+</html>
